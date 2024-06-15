@@ -85,56 +85,159 @@
                 </div>
             </div>
             <h3 class="faq-header">FAQs</h3>
-            <div class="faq-container">
-                
-                
-                <ul class="accordion">
-                    <li>
-                        <input type="radio" name="accordion"  id="">
-                        <label for="">Question 1</label>
-                        <div class="answer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
-                        </div>
-                    </li>
-                    <li>
-                      <input type="radio" name="accordion" id="">
-                      <label for="">Question 2</label>
-                      <div class="answer">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
-                      </div>
-                    </li>
-                    <li>
-                      <input type="radio" name="accordion" id="">
-                      <label for="">Question 3</label>
-                      <div class="answer">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
-                      </div>
-                    </li>
-                    <li>
-                      <input type="radio" name="accordion" id="">
-                      <label for="">Question 4</label>
-                      <div class="answer">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
-                      </div>
-                    </li>
-                    <li>
-                      <input type="radio" name="accordion" id="">
-                      <label for="">Question 5</label>
-                      <div class="answer">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
-                      </div>
-                    </li>
-                </ul>
-            </div>
+            
         </div>
     </div>
+    <div class="faq-container">
+                
+                
+      <ul class="accordion">
+          <li>
+              <input type="radio" name="accordion"  id="">
+              <label for="">Question 1</label>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+              </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 2</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 3</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 4</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 5</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+      </ul>
+  </div>
+    <style>
+      .faq h2{
+        color: #fafafa;
+      }
+
+      .faq{
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+      }
+
+      .wrapper::before{
+        
+        transform: translateZ(-10px) scale(2);
+        filter: blur(3px);
+        /* background-image: url('img/og_vision.jpg'); */
+        
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('img/call.jpeg') ;
+        background-size: cover ;
+        content: '';
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        padding-bottom: 2rem;
+        
+      }
+
+      @media (max-width: 850px) {
+      .form {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+      }
+
+      .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+      }
+
+      .text {
+        margin: 1rem 0 1.5rem 0;
+      }
+
+      .social-media {
+        padding: 1.5rem 0 0 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+    /* .contact-container {
+      padding: 1.5rem 0 1.5rem 1.5rem;
+    } */
+    .faq{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .contact-info:before {
+      display: none;
+    }
+
+    
+
+    
+    .contact-info {
+      padding: 1.7rem 1.6rem;
+    }
+
+    .text,
+    .information,
+    .social-media p {
+      font-size: 0.8rem;
+    }
+
+    .title {
+      font-size: 1.15rem;
+    }
+
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .icon {
+      width: 23px;
+    }
+
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+
+    .btn {
+      padding: 0.45rem 1.2rem;
+    }
+  }
+
+    </style>
     <script>
         const inputs = document.querySelectorAll(".input");
         const radios = document.querySelectorAll(".accordion li")
 
         function clickFunc(){
           // console.log('radio')
-          console.log(this)
+          // console.log(this)
           const clickedRadioInput = this.querySelector('input[type="radio"]');
           clickedRadioInput.checked = true;
         }
