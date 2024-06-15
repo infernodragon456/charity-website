@@ -8,28 +8,14 @@
     </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/1690d6a2c1.js" crossorigin="anonymous"></script>
-    <!-- <script defer>
-        let next = document.querySelector('.next')
-        let prev = document.querySelector('.prev')
-        let items = document.querySelectorAll('.item')
-        console.log(items)
-        next.addEventListener('click', function(){
-            let items = document.querySelectorAll('.item')
-            document.querySelector('.slide').appendChild(items[0])
-        })
-
-        prev.addEventListener('click', function(){
-            let items = document.querySelectorAll('.item')
-            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-        })
-    </script> -->
+    
 </head>
 
 <body>
     <div class="navbar">
         <div class="stripbar"></div>
         <nav>
-            <ul class="nav-cont">
+            <ul class="nav-cont" id="nav-menu">
                 <li class = "nav-item"><a  href="/home">Home</a> </li>
                 
                 <li class = "nav-item"> <a  href="/about">About Anpara</a> </li>
@@ -38,6 +24,13 @@
                 <!-- <li class = "nav-item"> <a  href="/hehe">Contact Us</a> </li> -->
             </ul>
             
+            <div class="hamburger" id="nav-toggle">
+                <i class="fa-solid fa-bars " ></i>
+            </div>
+            
+            <div  id="nav-close">
+                <i class="fa-solid fa-x" ></i>
+            </div>
             
         </nav>
     </div>
